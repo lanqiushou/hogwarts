@@ -3,6 +3,7 @@ package test_web.wework;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import test_web.wework.page.ContactPage;
 import test_web.wework.page.MainPage;
 
@@ -32,6 +33,29 @@ public class TestContact {
         //todo: 中文名
         contact.importFromFile(this.getClass().getResource("/通讯录批量导入模板.xlsx"));
 
+    }
+
+    @Test
+    void testAddDepartment() {
+        contact.addDepartment("技术部");
+    }
+
+    @Test
+    void testDeleteDepartment() {
+        contact.deleteDepartment("技术部");
+    }
+
+    @Test
+    void testAddTag() {
+        String expectedTagName = "测试";
+        String tagName = contact.addTag(expectedTagName).flush().search(expectedTagName).getTagName().trim();
+
+//        assertEquals(expectedTagName,tagName);
+    }
+
+    @Test
+    void testDeleteTag() {
+        contact.deleteTag("测试");
     }
 
     @AfterAll

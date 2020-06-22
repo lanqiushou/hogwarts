@@ -18,13 +18,13 @@ public class BasePage {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        selenium 4.0 use duration
 //        wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait=new WebDriverWait(driver, 10);
+        wait=new WebDriverWait(driver, 30);
     }
 
     public BasePage(RemoteWebDriver driver) {
         this.driver = driver;
 //        wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait=new WebDriverWait(driver,10);
+        wait=new WebDriverWait(driver,30);
 
     }
 
@@ -37,6 +37,11 @@ public class BasePage {
     public void click(By by){
         //todo: 异常处理
         wait.until(ExpectedConditions.elementToBeClickable(by));
+        driver.findElement(by).click();
+    }
+
+    public void clickNonClickble(By by) {
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         driver.findElement(by).click();
     }
 
