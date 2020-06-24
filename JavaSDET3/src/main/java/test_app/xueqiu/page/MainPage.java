@@ -1,13 +1,6 @@
 package test_app.xueqiu.page;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 public class MainPage extends BasePage{
 
@@ -18,8 +11,10 @@ public class MainPage extends BasePage{
         return new SearchPage(driver);
     }
 
-    public void toStock(){
+    public MarketPage toMarket(){
+        click(By.xpath("//*[@resource-id='com.xueqiu.android:id/tab_name' and @text='行情']"));
 
+        return new MarketPage(driver);
     }
 
 }

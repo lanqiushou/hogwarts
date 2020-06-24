@@ -2,12 +2,9 @@ package test_app.xueqiu.page;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class SearchPage extends BasePage {
@@ -41,10 +38,22 @@ public class SearchPage extends BasePage {
         return nameList;
     }
 
+    public SearchPage viewSearchResult() {
+        click(nameLocator);
+
+        return this;
+    }
 
     public double getPrice() {
-        //todo: 独立一个独立的po方法
-        click(nameLocator);
-        return Double.valueOf(find(By.id("current_price")).getText());
+        //done: 独立一个独立的po方法
+//        click(nameLocator);
+        return Double.valueOf(viewSearchResult().find(By.id("current_price")).getText());
+    }
+
+    public String addStock() {
+        viewSearchResult().click(By.id("com.xueqiu.android:id/follow_btn"));
+//        click(By.id("com.xueqiu.android:id/tv_left"));
+
+        return find(By.id("com.xueqiu.android:id/followed_btn")).getText();
     }
 }

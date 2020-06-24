@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 import test_app.xueqiu.page.MainPage;
 import test_app.xueqiu.page.SearchPage;
 
@@ -39,5 +40,15 @@ class SearchPageTest {
     @Test
     void getPrice() {
         assertTrue(searchPage.search("alibaba").getPrice() > 200);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "alibaba",
+            "jd",
+            "baidu"
+    })
+    void addStock(String keyword) {
+        assertEquals("已添加",searchPage.search(keyword).addStock().trim());
     }
 }
