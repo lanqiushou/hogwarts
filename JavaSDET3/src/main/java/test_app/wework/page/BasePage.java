@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
@@ -73,6 +74,14 @@ public class BasePage {
 
     public MobileElement find(String text) {
         return driver.findElement(byText(text));
+    }
+
+    public List<MobileElement> finds(By by) {
+        return driver.findElements(by);
+    }
+
+    public List<MobileElement> finds(String text) {
+        return driver.findElements(byText(text));
     }
 
     public void click(By by) {

@@ -12,5 +12,9 @@ public class Wework extends BasePage{
         return new 日程Page(driver);
     }
 
+    public 待办Page 待办() {
+        click(By.id("h7x"));
 
+        return new 待办Page(driver);
+    }
 }
