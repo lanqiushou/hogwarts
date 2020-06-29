@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
-    private final int timeOutInSecondsDefault = 60;
+    private final int timeOutInSecondsDefault = 30;
     //    AndroidDriver<MobileElement> driver;
     AppiumDriver<MobileElement> driver;
     //    IOSDriver
