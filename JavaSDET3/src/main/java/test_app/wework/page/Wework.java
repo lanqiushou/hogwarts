@@ -17,4 +17,12 @@ public class Wework extends BasePage{
 
         return new 待办Page(driver);
     }
+
+    public 汇报Page 汇报() {
+        click("工作台");
+        //done: swipe to find element
+        scrollFind("汇报").click();
+
+        return new 汇报Page(driver);
+    }
 }
