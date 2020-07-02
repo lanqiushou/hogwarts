@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class MainPage extends BasePage{
+public class MainPage extends WebBasePage{
 
     public MainPage() {
         super();

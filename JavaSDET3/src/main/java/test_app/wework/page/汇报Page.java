@@ -4,11 +4,10 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class 汇报Page extends BasePage {
+public class 汇报Page extends AppBasePage {
     private final By dailyReport = By.xpath("//*[@resource-id='com.tencent.wework:id/el8' and @text='日报']");
     private final By dailyContent = By.xpath("//*[@class='android.view.View' and @text='今日工作*']/../*[@class='android.widget.EditText']");
     private final By dailyReportDetail = By.xpath("//*[contains(@text,'我的日报')]");

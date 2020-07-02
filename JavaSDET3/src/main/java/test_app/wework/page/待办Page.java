@@ -4,11 +4,10 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class 待办Page extends BasePage {
+public class 待办Page extends AppBasePage {
     private final By add = By.id("h9p");
     private final By detail = By.id("b58");
     private final By save = byText("保存");
@@ -28,7 +27,6 @@ public class 待办Page extends BasePage {
     }
 
     public List<String> 获取待办列表() {
-
         return finds(todoList).stream().map(x -> x.getText()).collect(Collectors.toList());
     }
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import test_framework.BasePage;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -16,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 //import androidx.test.uiautomator.UiScrollable;
 //import androidx.test.uiautomator.UiSelector;
 
-public class BasePage {
-    private final int timeOutInSecondsDefault = 30;
+public class AppBasePage extends BasePage{
+    private final int timeOutInSecondsDefault = 60;
     //    AndroidDriver<MobileElement> driver;
     AppiumDriver<MobileElement> driver;
     //    IOSDriver
@@ -25,14 +26,17 @@ public class BasePage {
     String packageName;
     String activityName;
 
-    public BasePage(String packageName, String activityName) {
+    public AppBasePage() {
+    }
+
+    public AppBasePage(String packageName, String activityName) {
         this.packageName = packageName;
         this.activityName = activityName;
         startApp(this.packageName, this.activityName);
 
     }
 
-    public BasePage(AppiumDriver<MobileElement> driver) {
+    public AppBasePage(AppiumDriver<MobileElement> driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, timeOutInSecondsDefault);
     }
