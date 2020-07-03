@@ -3,10 +3,10 @@ package test_app.xueqiu.page;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
@@ -69,7 +69,56 @@ public class BasePage {
     }
 
     //todo:
-    public void waitElement() {
+    public WebElement waitElement(By element) {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(element));
+    }
 
+    /*
+     *@params contextName可选的参数项有:
+     *          - native 原生app
+     *          - webview
+     */
+    public void switchContext(String contextName) {
+        for (String context : driver.getContextHandles()) {
+            if (context.toLowerCase().contains(contextName.toLowerCase())) {
+                driver.context(context);
+                System.out.println("Context切换：" + context);
+                break;
+            }
+        }
+    }
+
+    public void switchWindow(String window) {
+
+        driver.switchTo().window(window);
+        System.out.println("-------------------window切换：" + driver.getTitle() + "-------------------");
+        System.out.println(driver.getPageSource());
+    }
+
+    /*
+     * 切换到自定title对应的window
+     */
+    public void switchWindowByTitle(String title) {
+
+        //根据title切换window，最长重试5次
+        for(int i=0; i<5; i++) {
+            boolean isSuccess = false;
+
+            for (String window : driver.getWindowHandles()) {
+                switchWindow(window);
+                if (driver.getTitle().contains(title)) {
+                    isSuccess = true;
+                    break;
+                }
+            }
+
+            if(isSuccess) break;
+
+            System.out.println("第" + i + "次切换window失败");
+        }
+    }
+
+    public String getToast(By toast) {
+        return waitElement(toast).getText();
     }
 }

@@ -17,4 +17,10 @@ public class MainPage extends BasePage{
         return new MarketPage(driver);
     }
 
+    public TradePage toTrade() {
+        click(By.xpath("//*[@text='交易']"));
+
+        return new TradePage(driver);
+    }
+
 }
