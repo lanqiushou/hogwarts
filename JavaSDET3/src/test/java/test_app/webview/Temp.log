@@ -1,0 +1,573 @@
+2020-07-04 06:25:59:404 [Appium] Welcome to Appium v1.16.0
+2020-07-04 06:25:59:414 [Appium] Non-default server args:
+2020-07-04 06:25:59:419 [Appium]   logFile: /tmp/appium_0704.log
+2020-07-04 06:25:59:541 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2020-07-04 06:26:20:825 [HTTP] --> POST /wd/hub/session
+2020-07-04 06:26:20:825 [HTTP] {"desiredCapabilities":{"appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","noReset":"true","dontStopAppOnReset":"true","platformName":"android","deviceName":"hogwarts"},"capabilities":{"firstMatch":[{"appium:appActivity":".view.WelcomeActivityAlias","appium:appPackage":"com.xueqiu.android","appium:chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","appium:deviceName":"hogwarts","appium:dontStopAppOnReset":"true","appium:noReset":"true","platformName":"android"}]}}
+2020-07-04 06:26:20:830 [W3C] Calling AppiumDriver.createSession() with args: [{"appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","noReset":"true","dontStopAppOnReset":"true","platformName":"android","deviceName":"hogwarts"},null,{"firstMatch":[{"appium:appActivity":".view.WelcomeActivityAlias","appium:appPackage":"com.xueqiu.android","appium:chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","appium:deviceName":"hogwarts","appium:dontStopAppOnReset":"true","appium:noReset":"true","platformName":"android"}]}]
+2020-07-04 06:26:20:882 [BaseDriver] Event 'newSessionRequested' logged at 1593843980830 (14:26:20 GMT+0800 (中国标准时间))
+2020-07-04 06:26:20:901 [Appium]
+2020-07-04 06:26:20:901 [Appium] ======================================================================
+2020-07-04 06:26:20:902 [Appium]   DEPRECATION WARNING:
+2020-07-04 06:26:20:903 [Appium]
+2020-07-04 06:26:20:903 [Appium]   The 'automationName' capability was not provided in the desired
+2020-07-04 06:26:20:904 [Appium]   capabilities for this Android session
+2020-07-04 06:26:20:905 [Appium]
+2020-07-04 06:26:20:905 [Appium]   Setting 'automationName=UiAutomator2' by default and using the
+2020-07-04 06:26:20:906 [Appium]   UiAutomator2 Driver
+2020-07-04 06:26:20:906 [Appium]
+2020-07-04 06:26:20:906 [Appium]   The next major version of Appium (2.x) will **require** the
+2020-07-04 06:26:20:907 [Appium]   'automationName' capability to be set for all sessions on all
+2020-07-04 06:26:20:907 [Appium]   platforms
+2020-07-04 06:26:20:908 [Appium]
+2020-07-04 06:26:20:909 [Appium]   In previous versions (Appium <= 1.13.x), the default was
+2020-07-04 06:26:20:909 [Appium]   'automationName=UiAutomator1'
+2020-07-04 06:26:20:909 [Appium]
+2020-07-04 06:26:20:909 [Appium]   If you wish to use that automation instead of UiAutomator2, please
+2020-07-04 06:26:20:910 [Appium]   add 'automationName=UiAutomator1' to your desired capabilities
+2020-07-04 06:26:20:910 [Appium]
+2020-07-04 06:26:20:910 [Appium]   For more information about drivers, please visit
+2020-07-04 06:26:20:911 [Appium]   http://appium.io/docs/en/about-appium/intro/ and explore the
+2020-07-04 06:26:20:911 [Appium]   'Drivers' menu
+2020-07-04 06:26:20:912 [Appium]
+2020-07-04 06:26:20:912 [Appium] ======================================================================
+2020-07-04 06:26:20:912 [Appium]
+2020-07-04 06:26:21:915 [Appium] Appium v1.16.0 creating new AndroidUiautomator2Driver (v1.40.0) session
+2020-07-04 06:26:21:921 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2020-07-04 06:26:21:921 [BaseDriver] Creating session with W3C capabilities: {
+2020-07-04 06:26:21:922 [BaseDriver]   "alwaysMatch": {
+2020-07-04 06:26:21:922 [BaseDriver]     "platformName": "android",
+2020-07-04 06:26:21:922 [BaseDriver]     "appium:appActivity": ".view.WelcomeActivityAlias",
+2020-07-04 06:26:21:923 [BaseDriver]     "appium:appPackage": "com.xueqiu.android",
+2020-07-04 06:26:21:923 [BaseDriver]     "appium:chromedriverExecutable": "/Users/seveniruby/projects/chromedriver/72/chromedriver",
+2020-07-04 06:26:21:923 [BaseDriver]     "appium:deviceName": "hogwarts",
+2020-07-04 06:26:21:924 [BaseDriver]     "appium:dontStopAppOnReset": "true",
+2020-07-04 06:26:21:924 [BaseDriver]     "appium:noReset": "true"
+2020-07-04 06:26:21:924 [BaseDriver]   },
+2020-07-04 06:26:21:924 [BaseDriver]   "firstMatch": [
+2020-07-04 06:26:21:925 [BaseDriver]     {}
+2020-07-04 06:26:22:019 [BaseDriver]   ]
+2020-07-04 06:26:22:019 [BaseDriver] }
+2020-07-04 06:26:22:057 [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2020-07-04 06:26:22:058 [BaseDriver] Capability 'dontStopAppOnReset' changed from string to boolean. This may cause unexpected behavior
+2020-07-04 06:26:22:073 [BaseDriver] Session created with session id: c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:26:22:075 [UiAutomator2] Starting 'com.xueqiu.android' directly on the device
+2020-07-04 06:26:22:114 [ADB] Found 2 'build-tools' folders under '/Users/seveniruby/Library/Android/sdk/' (newest first):
+2020-07-04 06:26:22:114 [ADB]     /Users/seveniruby/Library/Android/sdk/build-tools/28.0.3
+2020-07-04 06:26:22:116 [ADB]     /Users/seveniruby/Library/Android/sdk/build-tools/23.0.3
+2020-07-04 06:26:22:118 [ADB] Using 'adb' from '/Users/seveniruby/Library/Android/sdk/platform-tools/adb'
+2020-07-04 06:26:22:119 [AndroidDriver] Retrieving device list
+2020-07-04 06:26:22:119 [ADB] Trying to find a connected android device
+2020-07-04 06:26:22:120 [ADB] Getting connected devices...
+2020-07-04 06:26:22:146 [ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2020-07-04 06:26:22:148 [AndroidDriver] Using device: emulator-5554
+2020-07-04 06:26:22:150 [ADB] Using 'adb' from '/Users/seveniruby/Library/Android/sdk/platform-tools/adb'
+2020-07-04 06:26:22:151 [ADB] Setting device id to emulator-5554
+2020-07-04 06:26:22:153 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2020-07-04 06:26:22:282 [ADB] Current device property 'ro.build.version.sdk': 29
+2020-07-04 06:26:22:283 [ADB] Device API level: 29
+2020-07-04 06:26:22:283 [UiAutomator2] Relaxing hidden api policy
+2020-07-04 06:26:22:284 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings put global hidden_api_policy_pre_p_apps 1'
+2020-07-04 06:26:22:500 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings put global hidden_api_policy_p_apps 1'
+2020-07-04 06:26:22:919 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings put global hidden_api_policy 1'
+2020-07-04 06:26:23:416 [AndroidDriver] No app sent in, not parsing package/activity
+2020-07-04 06:26:23:418 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2020-07-04 06:26:23:437 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2020-07-04 06:26:23:880 [AndroidDriver] Pushing settings apk to device...
+2020-07-04 06:26:23:882 [ADB] Getting install status for io.appium.settings
+2020-07-04 06:26:23:883 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2020-07-04 06:26:24:233 [ADB] 'io.appium.settings' is installed
+2020-07-04 06:26:24:234 [ADB] Getting package info for 'io.appium.settings'
+2020-07-04 06:26:24:235 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2020-07-04 06:26:24:393 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.15.0' >= '2.15.0')
+2020-07-04 06:26:24:395 [ADB] There is no need to install/upgrade '/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2020-07-04 06:26:24:397 [ADB] Getting IDs of all 'io.appium.settings' processes
+2020-07-04 06:26:24:400 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2020-07-04 06:26:24:541 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f io\\.appium\\.settings'
+2020-07-04 06:26:24:725 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2020-07-04 06:26:24:727 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell appops set io.appium.settings android\:mock_location allow'
+2020-07-04 06:26:24:908 [Logcat] Starting logcat capture
+2020-07-04 06:26:25:004 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8200
+2020-07-04 06:26:25:005 [ADB] Forwarding system: 8200 to device: 6790
+2020-07-04 06:26:25:007 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp\:8200 tcp\:6790'
+2020-07-04 06:26:25:037 [ADB] Getting install status for io.appium.uiautomator2.server
+2020-07-04 06:26:25:038 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2020-07-04 06:26:25:363 [ADB] 'io.appium.uiautomator2.server' is installed
+2020-07-04 06:26:25:364 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2020-07-04 06:26:25:364 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2020-07-04 06:26:25:556 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.5.2' >= '4.5.2')
+2020-07-04 06:26:25:556 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2020-07-04 06:26:25:557 [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.5.2.apk
+2020-07-04 06:26:25:559 [ADB] Using 'apksigner' from '/Users/seveniruby/Library/Android/sdk/build-tools/28.0.3/apksigner'
+2020-07-04 06:26:25:561 [ADB] Starting '/Users/seveniruby/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.5.2.apk"]'
+2020-07-04 06:26:27:589 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2020-07-04 06:26:27:589 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2020-07-04 06:26:27:590 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2020-07-04 06:26:27:590 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2020-07-04 06:26:27:591 [ADB]
+2020-07-04 06:26:27:591 [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.5.2.apk' is already signed.
+2020-07-04 06:26:27:592 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2020-07-04 06:26:27:593 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2020-07-04 06:26:27:738 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2020-07-04 06:26:27:739 [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2020-07-04 06:26:27:740 [ADB] Starting '/Users/seveniruby/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2020-07-04 06:26:29:422 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2020-07-04 06:26:29:423 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2020-07-04 06:26:29:423 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2020-07-04 06:26:29:424 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2020-07-04 06:26:29:424 [ADB]
+2020-07-04 06:26:29:425 [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2020-07-04 06:26:29:425 [UiAutomator2] Server packages are not going to be (re)installed
+2020-07-04 06:26:29:430 [UiAutomator2] Waiting up to 30000ms for services to be available
+2020-07-04 06:26:29:431 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2020-07-04 06:26:29:583 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2020-07-04 06:26:29:584 [UiAutomator2] No app capability. Assuming it is already on the device
+2020-07-04 06:26:29:585 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2020-07-04 06:26:29:647 [UiAutomator2] No obsolete sessions have been detected (Error: socket hang up)
+2020-07-04 06:26:29:647 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+2020-07-04 06:26:30:185 [UiAutomator2] Starting UIAutomator2 server 4.5.2
+2020-07-04 06:26:30:185 [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.5.2.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2020-07-04 06:26:30:185 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2020-07-04 06:26:30:186 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2020-07-04 06:26:31:197 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:31:201 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:31:224 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:32:225 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:32:226 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:32:235 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:33:241 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:33:243 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:33:251 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:34:257 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:34:257 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:34:322 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:35:324 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:35:324 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:35:351 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:36:353 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:36:354 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:36:364 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:37:370 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:37:371 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:37:397 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:38:403 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:38:403 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:38:487 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:39:493 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:39:499 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:39:519 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:40:525 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:40:527 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:40:633 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:41:636 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:41:637 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:41:652 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:42:657 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:42:660 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:42:675 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:43:681 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:43:682 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:43:939 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:44:945 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:44:946 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:45:065 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:46:071 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:46:072 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:46:088 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:47:093 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:47:093 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:47:102 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:48:109 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:48:109 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:48:123 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:49:131 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:49:132 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:49:151 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:50:157 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:50:157 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:50:169 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:51:175 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:51:176 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:51:304 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:51:684 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2020-07-04 06:26:52:309 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:52:310 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:52:339 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:53:345 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:53:345 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:53:361 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:54:368 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:54:368 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:54:381 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:55:388 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:55:389 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:55:438 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:56:445 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:56:446 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:56:495 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:57:501 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:57:502 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:57:546 [WD Proxy] Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+2020-07-04 06:26:58:549 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:26:58:550 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-07-04 06:26:59:347 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"ready":true,"message":"UiAutomator2 Server is ready to accept commands"}}
+2020-07-04 06:26:59:349 [UiAutomator2] The initialization of the instrumentation process took 29163ms
+2020-07-04 06:26:59:350 [WD Proxy] Matched '/session' to command name 'createSession'
+2020-07-04 06:26:59:351 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8200/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"hogwarts","dontStopAppOnReset":true,"noReset":true},"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"emulator-5554","dontStopAppOnReset":true,"noReset":true,"deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}
+2020-07-04 06:26:59:454 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":{"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"hogwarts","dontStopAppOnReset":true,"noReset":true},"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"emulator-5554","dontStopAppOnReset":true,"noReset":true,"deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}}
+2020-07-04 06:26:59:455 [WD Proxy] Determined the downstream protocol as 'W3C'
+2020-07-04 06:26:59:476 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969/appium/device/info] with no body
+2020-07-04 06:26:59:713 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":{"androidId":"90a9abd4a45c4754","manufacturer":"Google","model":"Android SDK built for x86_64","brand":"google","apiVersion":"29","platformVersion":"10","carrierName":"Android","realDisplaySize":"1080x1920","displayDensity":420,"networks":[{"type":0,"typeName":"MOBILE","subtype":13,"subtypeName":"LTE","isConnected":true,"detailedState":"CONNECTED","state":"CONNECTED","extraInfo":"epc.tmobile.com","isAvailable":true,"isFailover":false,"isRoaming":false,"capabilities":{"transportTypes":"TRANSPORT_CELLULAR","networkCapabilities":"NET_CAPABILITY_MMS,NET_CAPABILITY_SUPL,NET_CAPABILITY_DUN,NET_CAPABILITY_FOTA,NET_CAPABILITY_IMS,NET_CAPABILITY_CBS,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","linkUpstreamBandwidthKbps":51200,"linkDownBandwidthKbps":102400,"signalStrength":-2147483648,"netwo...
+2020-07-04 06:26:59:715 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+2020-07-04 06:27:00:026 [AndroidDriver] Screen already unlocked, doing nothing
+2020-07-04 06:27:00:027 [UiAutomator2] Starting 'com.xueqiu.android/.view.WelcomeActivityAlias and waiting for 'com.xueqiu.android/.view.WelcomeActivityAlias'
+2020-07-04 06:27:00:030 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -n com.xueqiu.android/.view.WelcomeActivityAlias -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2020-07-04 06:27:00:537 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969/appium/device/pixel_ratio] with body: {}
+2020-07-04 06:27:00:566 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":2.625}
+2020-07-04 06:27:00:571 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2020-07-04 06:27:00:571 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969/appium/device/system_bars] with body: {}
+2020-07-04 06:27:00:667 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":{"statusBar":63}}
+2020-07-04 06:27:00:671 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2020-07-04 06:27:00:671 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969/window/current/size] with body: {}
+2020-07-04 06:27:00:771 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":{"height":1794,"width":1080}}
+2020-07-04 06:27:00:772 [Appium] New AndroidUiautomator2Driver session created successfully, session c4e009ee-1f40-4070-9525-e69ccca9e351 added to master session list
+2020-07-04 06:27:00:773 [BaseDriver] Event 'newSessionStarted' logged at 1593844020773 (14:27:00 GMT+0800 (中国标准时间))
+2020-07-04 06:27:00:775 [W3C (c4e009ee)] Cached the protocol value 'W3C' for the new session c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:00:776 [W3C (c4e009ee)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"hogwarts","dontStopAppOnReset":true,"noReset":true},"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"emulator-5554","dontStopAppOnReset":true,"noReset":true,"deviceUDID":"emulator-5554","deviceApiLevel":29,"platformVersion":"10","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86_64","deviceManufacturer":"Google","pixelRatio":2.625,"statBarHeight":63,"viewportRect":{"left":0,"top":63,"width":1080,"hei...
+2020-07-04 06:27:00:786 [HTTP] <-- POST /wd/hub/session 200 39959 ms - 1094
+2020-07-04 06:27:00:842 [HTTP]
+2020-07-04 06:27:01:203 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:01:203 [HTTP] {}
+2020-07-04 06:27:01:205 [W3C (c4e009ee)] Calling AppiumDriver.getSession() with args: ["c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:01:206 [UiAutomator2] Getting session details from server to mix in
+2020-07-04 06:27:01:207 [WD Proxy] Matched '/' to command name 'getSession'
+2020-07-04 06:27:01:207 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969] with body: {}
+2020-07-04 06:27:01:252 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":{}}
+2020-07-04 06:27:01:256 [W3C (c4e009ee)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"hogwarts","dontStopAppOnReset":true,"noReset":true},"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"emulator-5554","dontStopAppOnReset":true,"noReset":true,"deviceUDID":"emulator-5554","deviceApiLevel":29,"platformVersion":"10","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86_64","deviceManufacturer":"Google","pixelRatio":2.625,"statBarHeight":63,"viewportRect":{"left":0,"top":63,"width":1080,"height":1731}}
+2020-07-04 06:27:01:262 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351 200 58 ms - 1026
+2020-07-04 06:27:01:262 [HTTP]
+2020-07-04 06:27:01:315 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:01:316 [HTTP] {}
+2020-07-04 06:27:01:317 [W3C (c4e009ee)] Calling AppiumDriver.getSession() with args: ["c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:01:318 [UiAutomator2] Getting session details from server to mix in
+2020-07-04 06:27:01:319 [WD Proxy] Matched '/' to command name 'getSession'
+2020-07-04 06:27:01:319 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969] with body: {}
+2020-07-04 06:27:01:444 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":{}}
+2020-07-04 06:27:01:445 [W3C (c4e009ee)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"hogwarts","dontStopAppOnReset":true,"noReset":true},"platformName":"android","appActivity":".view.WelcomeActivityAlias","appPackage":"com.xueqiu.android","chromedriverExecutable":"/Users/seveniruby/projects/chromedriver/72/chromedriver","deviceName":"emulator-5554","dontStopAppOnReset":true,"noReset":true,"deviceUDID":"emulator-5554","deviceApiLevel":29,"platformVersion":"10","deviceScreenSize":"1080x1920","deviceScreenDensity":420,"deviceModel":"Android SDK built for x86_64","deviceManufacturer":"Google","pixelRatio":2.625,"statBarHeight":63,"viewportRect":{"left":0,"top":63,"width":1080,"height":1731}}
+2020-07-04 06:27:01:447 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351 200 131 ms - 1026
+2020-07-04 06:27:01:447 [HTTP]
+2020-07-04 06:27:01:479 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/timeouts
+2020-07-04 06:27:01:481 [HTTP] {"implicit":30000}
+2020-07-04 06:27:01:485 [W3C (c4e009ee)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,30000,"c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:01:489 [BaseDriver] W3C timeout argument: {"implicit":30000}}
+2020-07-04 06:27:01:489 [BaseDriver] Set implicit wait to 30000ms
+2020-07-04 06:27:01:491 [W3C (c4e009ee)] Responding to client with driver.timeouts() result: null
+2020-07-04 06:27:01:492 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/timeouts 200 12 ms - 14
+2020-07-04 06:27:01:493 [HTTP]
+2020-07-04 06:27:01:555 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element
+2020-07-04 06:27:01:555 [HTTP] {"using":"xpath","value":"//*[@text='交易']"}
+2020-07-04 06:27:01:559 [W3C (c4e009ee)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text='交易']","c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:01:561 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-07-04 06:27:01:562 [BaseDriver] Waiting up to 30000 ms for condition
+2020-07-04 06:27:01:565 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-07-04 06:27:01:565 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969/element] with body: {"strategy":"xpath","selector":"//*[@text='交易']","context":"","multiple":false}
+2020-07-04 06:27:06:228 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":{"ELEMENT":"39877436-e2a8-4f2c-9920-d21ec17fb7f0","element-6066-11e4-a52e-4f735466cecf":"39877436-e2a8-4f2c-9920-d21ec17fb7f0"}}
+2020-07-04 06:27:06:229 [W3C (c4e009ee)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"39877436-e2a8-4f2c-9920-d21ec17fb7f0","ELEMENT":"39877436-e2a8-4f2c-9920-d21ec17fb7f0"}
+2020-07-04 06:27:06:231 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element 200 4676 ms - 137
+2020-07-04 06:27:06:231 [HTTP]
+2020-07-04 06:27:06:286 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element
+2020-07-04 06:27:06:287 [HTTP] {"using":"xpath","value":"//*[@text='交易']"}
+2020-07-04 06:27:06:289 [W3C (c4e009ee)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text='交易']","c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:06:289 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-07-04 06:27:06:290 [BaseDriver] Waiting up to 30000 ms for condition
+2020-07-04 06:27:06:291 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-07-04 06:27:06:292 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969/element] with body: {"strategy":"xpath","selector":"//*[@text='交易']","context":"","multiple":false}
+2020-07-04 06:27:10:503 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":{"ELEMENT":"28a6d617-58c2-449e-be1d-6e8ff2ad4c20","element-6066-11e4-a52e-4f735466cecf":"28a6d617-58c2-449e-be1d-6e8ff2ad4c20"}}
+2020-07-04 06:27:10:504 [W3C (c4e009ee)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"28a6d617-58c2-449e-be1d-6e8ff2ad4c20","ELEMENT":"28a6d617-58c2-449e-be1d-6e8ff2ad4c20"}
+2020-07-04 06:27:10:505 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element 200 4219 ms - 137
+2020-07-04 06:27:10:506 [HTTP]
+2020-07-04 06:27:10:516 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element/28a6d617-58c2-449e-be1d-6e8ff2ad4c20/click
+2020-07-04 06:27:10:517 [HTTP] {"id":"28a6d617-58c2-449e-be1d-6e8ff2ad4c20"}
+2020-07-04 06:27:10:518 [W3C (c4e009ee)] Calling AppiumDriver.click() with args: ["28a6d617-58c2-449e-be1d-6e8ff2ad4c20","c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:10:519 [WD Proxy] Matched '/element/28a6d617-58c2-449e-be1d-6e8ff2ad4c20/click' to command name 'click'
+2020-07-04 06:27:10:520 [WD Proxy] Proxying [POST /element/28a6d617-58c2-449e-be1d-6e8ff2ad4c20/click] to [POST http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969/element/28a6d617-58c2-449e-be1d-6e8ff2ad4c20/click] with body: {"element":"28a6d617-58c2-449e-be1d-6e8ff2ad4c20"}
+2020-07-04 06:27:10:890 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":null}
+2020-07-04 06:27:10:891 [W3C (c4e009ee)] Responding to client with driver.click() result: null
+2020-07-04 06:27:10:893 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element/28a6d617-58c2-449e-be1d-6e8ff2ad4c20/click 200 376 ms - 14
+2020-07-04 06:27:10:893 [HTTP]
+2020-07-04 06:27:10:897 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/contexts
+2020-07-04 06:27:10:897 [HTTP] {}
+2020-07-04 06:27:10:901 [W3C (c4e009ee)] Calling AppiumDriver.getContexts() with args: ["c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:10:902 [AndroidDriver] Getting a list of available webviews
+2020-07-04 06:27:10:903 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+2020-07-04 06:27:11:083 [AndroidDriver] Not checking whether webviews have active pages; use the 'ensureWebviewsHavePages' cap to turn this check on
+2020-07-04 06:27:11:084 [AndroidDriver] WEBVIEW_4845 mapped to pid 4845
+2020-07-04 06:27:11:084 [AndroidDriver] Getting process name for webview
+2020-07-04 06:27:11:085 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ps'
+2020-07-04 06:27:11:343 [AndroidDriver] Parsed pid: '4845' pkg: 'com.xueqiu.android' from
+2020-07-04 06:27:11:343 [AndroidDriver]     USER           PID  PPID     VSZ    RSS WCHAN            ADDR S NAME
+2020-07-04 06:27:11:343 [AndroidDriver]     u0_a136       4845  1736 2186192 199944 0                   0 S com.xueqiu.android
+2020-07-04 06:27:11:343 [AndroidDriver] Returning process name: 'com.xueqiu.android'
+2020-07-04 06:27:11:344 [AndroidDriver] Found webviews: ["WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:11:344 [AndroidDriver] Available contexts: ["NATIVE_APP","WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:11:345 [W3C (c4e009ee)] Responding to client with driver.getContexts() result: ["NATIVE_APP","WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:11:346 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/contexts 200 449 ms - 70
+2020-07-04 06:27:11:347 [HTTP]
+2020-07-04 06:27:11:873 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/contexts
+2020-07-04 06:27:11:873 [HTTP] {}
+2020-07-04 06:27:11:874 [W3C (c4e009ee)] Calling AppiumDriver.getContexts() with args: ["c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:11:874 [AndroidDriver] Getting a list of available webviews
+2020-07-04 06:27:11:875 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+2020-07-04 06:27:11:979 [AndroidDriver] Not checking whether webviews have active pages; use the 'ensureWebviewsHavePages' cap to turn this check on
+2020-07-04 06:27:11:980 [AndroidDriver] WEBVIEW_4845 mapped to pid 4845
+2020-07-04 06:27:11:980 [AndroidDriver] Getting process name for webview
+2020-07-04 06:27:11:981 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ps'
+2020-07-04 06:27:12:224 [AndroidDriver] Parsed pid: '4845' pkg: 'com.xueqiu.android' from
+2020-07-04 06:27:12:225 [AndroidDriver]     USER           PID  PPID     VSZ    RSS WCHAN            ADDR S NAME
+2020-07-04 06:27:12:225 [AndroidDriver]     u0_a136       4845  1736 2186192 199944 0                   0 S com.xueqiu.android
+2020-07-04 06:27:12:226 [AndroidDriver] Returning process name: 'com.xueqiu.android'
+2020-07-04 06:27:12:226 [AndroidDriver] Found webviews: ["WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:12:227 [AndroidDriver] Available contexts: ["NATIVE_APP","WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:12:228 [W3C (c4e009ee)] Responding to client with driver.getContexts() result: ["NATIVE_APP","WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:12:229 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/contexts 200 356 ms - 70
+2020-07-04 06:27:12:230 [HTTP]
+2020-07-04 06:27:12:738 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/contexts
+2020-07-04 06:27:12:739 [HTTP] {}
+2020-07-04 06:27:12:740 [W3C (c4e009ee)] Calling AppiumDriver.getContexts() with args: ["c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:12:741 [AndroidDriver] Getting a list of available webviews
+2020-07-04 06:27:12:741 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+2020-07-04 06:27:12:847 [AndroidDriver] Not checking whether webviews have active pages; use the 'ensureWebviewsHavePages' cap to turn this check on
+2020-07-04 06:27:12:848 [AndroidDriver] WEBVIEW_4845 mapped to pid 4845
+2020-07-04 06:27:12:848 [AndroidDriver] Getting process name for webview
+2020-07-04 06:27:12:848 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ps'
+2020-07-04 06:27:12:983 [AndroidDriver] Parsed pid: '4845' pkg: 'com.xueqiu.android' from
+2020-07-04 06:27:12:984 [AndroidDriver]     USER           PID  PPID     VSZ    RSS WCHAN            ADDR S NAME
+2020-07-04 06:27:12:984 [AndroidDriver]     u0_a136       4845  1736 2186192 199944 0                   0 S com.xueqiu.android
+2020-07-04 06:27:12:986 [AndroidDriver] Returning process name: 'com.xueqiu.android'
+2020-07-04 06:27:12:988 [AndroidDriver] Found webviews: ["WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:12:989 [AndroidDriver] Available contexts: ["NATIVE_APP","WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:12:989 [W3C (c4e009ee)] Responding to client with driver.getContexts() result: ["NATIVE_APP","WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:12:994 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/contexts 200 252 ms - 70
+2020-07-04 06:27:12:995 [HTTP]
+2020-07-04 06:27:13:001 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/context
+2020-07-04 06:27:13:001 [HTTP] {"name":"WEBVIEW_com.xueqiu.android"}
+2020-07-04 06:27:13:002 [W3C (c4e009ee)] Calling AppiumDriver.setContext() with args: ["WEBVIEW_com.xueqiu.android","c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:13:003 [AndroidDriver] Getting a list of available webviews
+2020-07-04 06:27:13:004 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cat /proc/net/unix'
+2020-07-04 06:27:13:097 [AndroidDriver] Not checking whether webviews have active pages; use the 'ensureWebviewsHavePages' cap to turn this check on
+2020-07-04 06:27:13:098 [AndroidDriver] WEBVIEW_4845 mapped to pid 4845
+2020-07-04 06:27:13:098 [AndroidDriver] Getting process name for webview
+2020-07-04 06:27:13:098 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ps'
+2020-07-04 06:27:13:251 [AndroidDriver] Parsed pid: '4845' pkg: 'com.xueqiu.android' from
+2020-07-04 06:27:13:251 [AndroidDriver]     USER           PID  PPID     VSZ    RSS WCHAN            ADDR S NAME
+2020-07-04 06:27:13:252 [AndroidDriver]     u0_a136       4845  1736 2186192 199944 0                   0 S com.xueqiu.android
+2020-07-04 06:27:13:252 [AndroidDriver] Returning process name: 'com.xueqiu.android'
+2020-07-04 06:27:13:253 [AndroidDriver] Found webviews: ["WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:13:253 [AndroidDriver] Available contexts: ["NATIVE_APP","WEBVIEW_com.xueqiu.android","WEBVIEW_chrome"]
+2020-07-04 06:27:13:254 [AndroidDriver] Connecting to chrome-backed webview context 'WEBVIEW_com.xueqiu.android'
+2020-07-04 06:27:13:271 [AndroidDriver] A port was not given, using random free port: 8000
+2020-07-04 06:27:13:273 [AndroidDriver] Automated Chromedriver download is disabled. Use 'chromedriver_autodownload' server feature to enable it
+2020-07-04 06:27:13:274 [AndroidDriver] Before starting chromedriver, androidPackage is 'com.xueqiu.android'
+2020-07-04 06:27:13:275 [Chromedriver] Changed state to 'starting'
+2020-07-04 06:27:13:276 [Chromedriver] Set chromedriver binary as: /Users/seveniruby/projects/chromedriver/72/chromedriver
+2020-07-04 06:27:13:277 [Chromedriver] Killing any old chromedrivers, running: pkill -15 -f "/Users/seveniruby/projects/chromedriver/72/chromedriver.*--port=8000"
+2020-07-04 06:27:13:339 [Chromedriver] No old chromedrivers seem to exist
+2020-07-04 06:27:13:340 [Chromedriver] Cleaning any old adb forwarded port socket connections
+2020-07-04 06:27:13:340 [ADB] List forwarding ports
+2020-07-04 06:27:13:340 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --list'
+2020-07-04 06:27:13:354 [Chromedriver] Spawning chromedriver with: /Users/seveniruby/projects/chromedriver/72/chromedriver --url-base=wd/hub --port=8000 --adb-port=5037 --verbose
+2020-07-04 06:27:13:395 [Chromedriver] Chromedriver version: '72.0.3626.69'
+2020-07-04 06:27:13:396 [Chromedriver] Chromedriver v. 72.0.3626.69 does not fully support W3C protocol. Defaulting to MJSONWP
+2020-07-04 06:27:13:399 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:27:13:400 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/wd/hub/status] with no body
+2020-07-04 06:27:13:407 [WD Proxy] Got an unexpected response with status undefined: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8000}
+2020-07-04 06:27:13:612 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-07-04 06:27:13:613 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/wd/hub/status] with no body
+2020-07-04 06:27:13:618 [WD Proxy] Got response with status 200: {"sessionId":"","status":0,"value":{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.14.6"}}}
+2020-07-04 06:27:13:619 [Chromedriver] Starting MJSONWP Chromedriver session with capabilities: {
+2020-07-04 06:27:13:619 [Chromedriver]   "desiredCapabilities": {
+2020-07-04 06:27:13:620 [Chromedriver]     "chromeOptions": {
+2020-07-04 06:27:13:620 [Chromedriver]       "androidPackage": "com.xueqiu.android",
+2020-07-04 06:27:13:620 [Chromedriver]       "androidUseRunningApp": true,
+2020-07-04 06:27:13:621 [Chromedriver]       "androidDeviceSerial": "emulator-5554"
+2020-07-04 06:27:13:621 [Chromedriver]     },
+2020-07-04 06:27:13:621 [Chromedriver]     "loggingPrefs": {
+2020-07-04 06:27:13:621 [Chromedriver]       "browser": "ALL"
+2020-07-04 06:27:13:622 [Chromedriver]     }
+2020-07-04 06:27:13:622 [Chromedriver]   }
+2020-07-04 06:27:13:622 [Chromedriver] }
+2020-07-04 06:27:13:623 [WD Proxy] Matched '/session' to command name 'createSession'
+2020-07-04 06:27:13:623 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8000/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.xueqiu.android","androidUseRunningApp":true,"androidDeviceSerial":"emulator-5554"},"loggingPrefs":{"browser":"ALL"}}}
+2020-07-04 06:27:14:872 [Chromedriver] Webview version: 'Chrome/74.0.3729.185'
+2020-07-04 06:27:16:270 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:60345"},"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","proxy":{},"rotatable":false,"setWindowRect":false,"takesHeapSnapshot":true,"takesScreenshot":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unexpectedAlertBehaviour":"ignore","version":"74.0.3729.185","webStorageEnabled":true}}
+2020-07-04 06:27:16:270 [WD Proxy] Determined the downstream protocol as 'MJSONWP'
+2020-07-04 06:27:16:271 [Chromedriver] Changed state to 'online'
+2020-07-04 06:27:16:272 [W3C (c4e009ee)] Responding to client with driver.setContext() result: null
+2020-07-04 06:27:16:273 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/context 200 3272 ms - 14
+2020-07-04 06:27:16:273 [HTTP]
+2020-07-04 06:27:16:276 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window/handles
+2020-07-04 06:27:16:276 [HTTP] {}
+2020-07-04 06:27:16:277 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:16:279 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window/handles' to command name 'getWindowHandles'
+2020-07-04 06:27:16:280 [Protocol Converter] Rewrote the original URL '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window/handles' to '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window_handles' for MJSONWP protocol
+2020-07-04 06:27:16:281 [WD Proxy] Proxying [GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window_handles] to [GET http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/window_handles] with body: {}
+2020-07-04 06:27:16:362 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":["CDwindow-322E04CD2277DA9FA443BB50EA9E17C2","CDwindow-ED099686AC2306E6C4637792BCCCB62D","CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA"]}
+2020-07-04 06:27:16:363 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:16:365 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window/handles 200 88 ms - 194
+2020-07-04 06:27:16:365 [HTTP]
+2020-07-04 06:27:16:371 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title
+2020-07-04 06:27:16:371 [HTTP] {}
+2020-07-04 06:27:16:372 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:16:373 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title' to command name 'title'
+2020-07-04 06:27:16:374 [WD Proxy] Proxying [GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title] to [GET http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/title] with body: {}
+2020-07-04 06:27:17:827 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":""}
+2020-07-04 06:27:17:828 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:17:829 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title 200 1458 ms - 63
+2020-07-04 06:27:17:829 [HTTP]
+2020-07-04 06:27:17:840 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window
+2020-07-04 06:27:17:840 [HTTP] {"handle":"CDwindow-322E04CD2277DA9FA443BB50EA9E17C2"}
+2020-07-04 06:27:17:841 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:17:841 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window' to command name 'setWindow'
+2020-07-04 06:27:17:842 [Protocol Converter] Copied 'handle' value 'CDwindow-322E04CD2277DA9FA443BB50EA9E17C2' to 'name' as per JSONWP spec
+2020-07-04 06:27:17:842 [WD Proxy] Proxying [POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window] to [POST http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/window] with body: {"handle":"CDwindow-322E04CD2277DA9FA443BB50EA9E17C2","name":"CDwindow-322E04CD2277DA9FA443BB50EA9E17C2"}
+2020-07-04 06:27:17:969 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":null}
+2020-07-04 06:27:17:970 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:17:971 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window 200 131 ms - 65
+2020-07-04 06:27:17:971 [HTTP]
+2020-07-04 06:27:17:974 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source
+2020-07-04 06:27:17:975 [HTTP] {}
+2020-07-04 06:27:17:975 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:17:976 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source' to command name 'getPageSource'
+2020-07-04 06:27:17:977 [WD Proxy] Proxying [GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source] to [GET http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/source] with body: {}
+2020-07-04 06:27:18:225 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":"\u003C!DOCTYPE html>\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"zh-CN\">\u003Chead>    \u003Cmeta charset=\"utf-8\" />    \u003Cmeta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no\" />    \u003Cmeta name=\"format-detection\" content=\"telephone=no,email=no\" />    \u003Cscript src=\"js/jquery-1.9.1.js\">\u003C/script>    \u003Cscript src=\"js/status.js\">\u003C/script>    \u003Cstyle>        html,        body {            margin: 0;            padding: 0;            border: 0;        }        body {            line-height: 1.7;            font-size: 16px;            color: #333;            padding: 0px;            word-wrap: break-word;            word-break: break-all;            -webkit-text-size-adjust: none;            letter-spacing: -0.4px;            text-align: justify;            background-color: transparent;        }        h1 {            margin: auto;        }      ...
+2020-07-04 06:27:18:226 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:18:227 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source 200 252 ms - 10306
+2020-07-04 06:27:18:227 [HTTP]
+2020-07-04 06:27:18:243 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title
+2020-07-04 06:27:18:243 [HTTP] {}
+2020-07-04 06:27:18:244 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:18:245 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title' to command name 'title'
+2020-07-04 06:27:18:245 [WD Proxy] Proxying [GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title] to [GET http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/title] with body: {}
+2020-07-04 06:27:19:085 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":""}
+2020-07-04 06:27:19:085 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:19:086 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title 200 843 ms - 63
+2020-07-04 06:27:19:086 [HTTP]
+2020-07-04 06:27:19:092 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window
+2020-07-04 06:27:19:092 [HTTP] {"handle":"CDwindow-ED099686AC2306E6C4637792BCCCB62D"}
+2020-07-04 06:27:19:092 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:19:093 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window' to command name 'setWindow'
+2020-07-04 06:27:19:094 [Protocol Converter] Copied 'handle' value 'CDwindow-ED099686AC2306E6C4637792BCCCB62D' to 'name' as per JSONWP spec
+2020-07-04 06:27:19:094 [WD Proxy] Proxying [POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window] to [POST http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/window] with body: {"handle":"CDwindow-ED099686AC2306E6C4637792BCCCB62D","name":"CDwindow-ED099686AC2306E6C4637792BCCCB62D"}
+2020-07-04 06:27:19:195 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":null}
+2020-07-04 06:27:19:195 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:19:197 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window 200 105 ms - 65
+2020-07-04 06:27:19:197 [HTTP]
+2020-07-04 06:27:19:201 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source
+2020-07-04 06:27:19:201 [HTTP] {}
+2020-07-04 06:27:19:202 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:19:202 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source' to command name 'getPageSource'
+2020-07-04 06:27:19:203 [WD Proxy] Proxying [GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source] to [GET http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/source] with body: {}
+2020-07-04 06:27:20:417 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":"\u003C!DOCTYPE html>\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"zh-CN\">\u003Chead>    \u003Cmeta charset=\"utf-8\" />    \u003Cmeta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no\" />    \u003Cmeta name=\"format-detection\" content=\"telephone=no,email=no\" />    \u003Cscript src=\"js/jquery-1.9.1.js\">\u003C/script>    \u003Cscript src=\"js/status.js\">\u003C/script>    \u003Cstyle>        html,        body {            margin: 0;            padding: 0;            border: 0;        }        body {            line-height: 1.7;            font-size: 16px;            color: #333;            padding: 0px;            word-wrap: break-word;            word-break: break-all;            -webkit-text-size-adjust: none;            letter-spacing: -0.4px;            text-align: justify;            background-color: transparent;        }        h1 {            margin: auto;        }      ...
+2020-07-04 06:27:20:417 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:20:419 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source 200 1217 ms - 10306
+2020-07-04 06:27:20:419 [HTTP]
+2020-07-04 06:27:20:424 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title
+2020-07-04 06:27:20:424 [HTTP] {}
+2020-07-04 06:27:20:425 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:20:426 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title' to command name 'title'
+2020-07-04 06:27:20:426 [WD Proxy] Proxying [GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title] to [GET http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/title] with body: {}
+2020-07-04 06:27:20:794 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":""}
+2020-07-04 06:27:20:794 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:20:797 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/title 200 372 ms - 63
+2020-07-04 06:27:20:797 [HTTP]
+2020-07-04 06:27:20:809 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window
+2020-07-04 06:27:20:809 [HTTP] {"handle":"CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA"}
+2020-07-04 06:27:20:810 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:20:811 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window' to command name 'setWindow'
+2020-07-04 06:27:20:811 [Protocol Converter] Copied 'handle' value 'CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA' to 'name' as per JSONWP spec
+2020-07-04 06:27:20:812 [WD Proxy] Proxying [POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window] to [POST http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/window] with body: {"handle":"CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA","name":"CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA"}
+2020-07-04 06:27:20:913 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":null}
+2020-07-04 06:27:20:914 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:20:916 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window 200 106 ms - 65
+2020-07-04 06:27:20:916 [HTTP]
+2020-07-04 06:27:20:919 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source
+2020-07-04 06:27:20:919 [HTTP] {}
+2020-07-04 06:27:20:920 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:20:921 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source' to command name 'getPageSource'
+2020-07-04 06:27:20:921 [WD Proxy] Proxying [GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source] to [GET http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/source] with body: {}
+2020-07-04 06:27:23:850 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":"\u003C!DOCTYPE html>\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\" class=\"no-js\" lang=\"\">\u003Chead>\u003Cmeta charset=\"utf-8\" />\u003Cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\u003Ctitle>实盘交易\u003C/title>\u003Cmeta name=\"description\" content=\"雪球\" />\u003Cmeta name=\"format-detection\" content=\"telephone=no\" />\u003Cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no, viewport-fit=cover\" />\u003Cscript src=\"../static/js/app.js?1575535355185\">\u003C/script>\u003Clink rel=\"stylesheet\" href=\"../static/style/common.css\" />\u003Cstyle type=\"text/css\" id=\"s663-0\">blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,legend,li,ol,p,pre,td,th,ul{margin:0;padding:0;-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none}body,html,input,textarea{margin:0;padding:0}body,html{color:#333;font-family:PingFangSC,...
+2020-07-04 06:27:23:851 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:23:853 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/source 200 2934 ms - 24214
+2020-07-04 06:27:23:853 [HTTP]
+2020-07-04 06:27:23:871 [HTTP] --> GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window/handles
+2020-07-04 06:27:23:872 [HTTP] {}
+2020-07-04 06:27:23:872 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:23:873 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window/handles' to command name 'getWindowHandles'
+2020-07-04 06:27:23:873 [Protocol Converter] Rewrote the original URL '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window/handles' to '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window_handles' for MJSONWP protocol
+2020-07-04 06:27:23:874 [WD Proxy] Proxying [GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window_handles] to [GET http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/window_handles] with body: {}
+2020-07-04 06:27:23:954 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":["CDwindow-322E04CD2277DA9FA443BB50EA9E17C2","CDwindow-ED099686AC2306E6C4637792BCCCB62D","CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA"]}
+2020-07-04 06:27:23:958 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:23:960 [HTTP] <-- GET /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window/handles 200 89 ms - 194
+2020-07-04 06:27:23:960 [HTTP]
+2020-07-04 06:27:23:967 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window
+2020-07-04 06:27:23:967 [HTTP] {"handle":"CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA"}
+2020-07-04 06:27:23:968 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:23:969 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window' to command name 'setWindow'
+2020-07-04 06:27:23:969 [Protocol Converter] Copied 'handle' value 'CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA' to 'name' as per JSONWP spec
+2020-07-04 06:27:23:969 [WD Proxy] Proxying [POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window] to [POST http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/window] with body: {"handle":"CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA","name":"CDwindow-CAC01EC3B9C06C318834093DAF5A4FFA"}
+2020-07-04 06:27:24:306 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":null}
+2020-07-04 06:27:24:306 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:24:307 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/window 200 340 ms - 65
+2020-07-04 06:27:24:308 [HTTP]
+2020-07-04 06:27:24:313 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element
+2020-07-04 06:27:24:314 [HTTP] {"using":"css selector","value":".trade_home_info_3aI"}
+2020-07-04 06:27:24:314 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:24:315 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element' to command name 'findElement'
+2020-07-04 06:27:24:315 [WD Proxy] Proxying [POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element] to [POST http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/element] with body: {"using":"css selector","value":".trade_home_info_3aI"}
+2020-07-04 06:27:24:555 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":{"ELEMENT":"0.05380270791210329-1"}}
+2020-07-04 06:27:24:556 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:24:556 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element 200 243 ms - 158
+2020-07-04 06:27:24:557 [HTTP]
+2020-07-04 06:27:24:563 [HTTP] --> POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element/0.05380270791210329-1/click
+2020-07-04 06:27:24:563 [HTTP] {"id":"0.05380270791210329-1"}
+2020-07-04 06:27:24:563 [W3C (c4e009ee)] Driver proxy active, passing request on via HTTP proxy
+2020-07-04 06:27:24:564 [WD Proxy] Matched '/wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element/0.05380270791210329-1/click' to command name 'click'
+2020-07-04 06:27:24:564 [WD Proxy] Proxying [POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element/0.05380270791210329-1/click] to [POST http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be/element/0.05380270791210329-1/click] with body: {"id":"0.05380270791210329-1"}
+2020-07-04 06:27:26:462 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":null}
+2020-07-04 06:27:26:462 [WD Proxy] Replacing sessionId cdc1c497010f129f76735240c06ad5be with c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:26:463 [HTTP] <-- POST /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351/element/0.05380270791210329-1/click 200 1900 ms - 65
+2020-07-04 06:27:26:463 [HTTP]
+2020-07-04 06:27:46:474 [HTTP] --> DELETE /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351
+2020-07-04 06:27:46:475 [HTTP] {}
+2020-07-04 06:27:46:476 [W3C (c4e009ee)] Calling AppiumDriver.deleteSession() with args: ["c4e009ee-1f40-4070-9525-e69ccca9e351"]
+2020-07-04 06:27:46:477 [BaseDriver] Event 'quitSessionRequested' logged at 1593844066476 (14:27:46 GMT+0800 (中国标准时间))
+2020-07-04 06:27:46:478 [Appium] Removing session c4e009ee-1f40-4070-9525-e69ccca9e351 from our master session list
+2020-07-04 06:27:46:479 [UiAutomator2] Deleting UiAutomator2 session
+2020-07-04 06:27:46:480 [AndroidDriver] Stopping chromedriver for context WEBVIEW_com.xueqiu.android
+2020-07-04 06:27:46:482 [Chromedriver] Changed state to 'stopping'
+2020-07-04 06:27:46:485 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/wd/hub/session/cdc1c497010f129f76735240c06ad5be] with no body
+2020-07-04 06:27:46:488 [WD Proxy] Got response with status 200: {"sessionId":"cdc1c497010f129f76735240c06ad5be","status":0,"value":null}
+2020-07-04 06:27:46:494 [Chromedriver] Changed state to 'stopped'
+2020-07-04 06:27:46:494 [UiAutomator2] Deleting UiAutomator2 server session
+2020-07-04 06:27:46:495 [WD Proxy] Matched '/' to command name 'deleteSession'
+2020-07-04 06:27:46:495 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/wd/hub/session/556ef5f5-fcf6-4432-b901-f8cace62f969] with no body
+2020-07-04 06:27:46:568 [WD Proxy] Got response with status 200: {"sessionId":"556ef5f5-fcf6-4432-b901-f8cace62f969","value":null}
+2020-07-04 06:27:46:569 [Logcat] Stopping logcat capture
+2020-07-04 06:27:46:574 [ADB] Removing forwarded port socket connection: 8200
+2020-07-04 06:27:46:574 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp\:8200'
+2020-07-04 06:27:46:591 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2020-07-04 06:27:46:593 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings delete global hidden_api_policy_pre_p_apps'
+2020-07-04 06:27:46:952 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings delete global hidden_api_policy_p_apps'
+2020-07-04 06:27:47:306 [Instrumentation] .
+2020-07-04 06:27:47:369 [ADB] Running '/Users/seveniruby/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings delete global hidden_api_policy'
+2020-07-04 06:27:47:940 [BaseDriver] Event 'quitSessionFinished' logged at 1593844067940 (14:27:47 GMT+0800 (中国标准时间))
+2020-07-04 06:27:47:941 [W3C (c4e009ee)] Received response: null
+2020-07-04 06:27:47:941 [W3C (c4e009ee)] But deleting session, so not returning
+2020-07-04 06:27:47:941 [W3C (c4e009ee)] Responding to client with driver.deleteSession() result: null
+2020-07-04 06:27:47:942 [HTTP] <-- DELETE /wd/hub/session/c4e009ee-1f40-4070-9525-e69ccca9e351 200 1468 ms - 14
+2020-07-04 06:27:47:943 [HTTP]
+2020-07-04 06:27:49:782 [Instrumentation] Time: 55.766
+2020-07-04 06:27:49:782 [Instrumentation]
+2020-07-04 06:27:49:782 [Instrumentation] OK (1 test)
+2020-07-04 06:27:49:919 [Instrumentation] The process has exited with code 0
+2020-07-04 06:27:55:632 [Appium] Received SIGINT - shutting down
