@@ -1,0 +1,23 @@
+name: 添加企业微信成员
+description: 添加企业微信成员，查找确认添加已成功
+steps:
+  - page: weixin_main
+    action: init
+
+  - page: weixin_main
+    action: to_contact
+
+  - page: weixin_contact
+    action: add_member
+    params:
+      username: "3"
+      acctid: "3"
+      mobile: "15600534763"
+
+  - page: weixin_contact
+    action: search
+    params:
+      memberSearchInput: "3"
+    expect:
+      css: .member_display_cover_detail_name
+      result: "3"

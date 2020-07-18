@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 public class WebTest {
@@ -29,7 +30,8 @@ public class WebTest {
     @ParameterizedTest(name = "{index} {1}")
     @MethodSource
     void classic(UIAuto uiAuto, String path){
-        basePage.run(uiAuto);
+        String result = basePage.run(uiAuto);
+        assertEquals("passed", result);
     }
 
     static List<Arguments> classic(){
@@ -40,7 +42,8 @@ public class WebTest {
         Arrays.asList(
 //                "/test_framework/webauto_1.yaml",
 //                "/test_framework/webauto_2.yaml",
-                "/test_framework/webauto_3.yaml"
+//                "/test_framework/webauto_3.yaml"
+                "/test_framework/weixin_add_member.yaml"
         ).stream().forEach(path->{
             UIAuto uiAuto= basePage.load(path);
             uiAuto.description=path;

@@ -1,0 +1,33 @@
+name: weixin_main
+methods:
+  init:
+    - action: get
+      url: https://work.weixin.qq.com/wework_admin/frame
+      cookies:
+        _ga: "GA1.2.1689801186.1592085294"
+        _gat: "1"
+        _gid: "GA1.2.1435674028.1594959298"
+        o_cookie: "363804430"
+        pac_uid: "1_363804430"
+        pgv_pvi: "4946772992"
+        pgv_pvid: "231784032"
+        ptcz: "cf9838a8d2d2a2b5f96581a1feed3b86e39cd2cbedc1dfe7e7a9530dcd4b00bc"
+        RK: "GVrBEkPSSt"
+        tvfe_boss_uuid: "2efc0ecfdc9c0467"
+        Hm_lpvt_9364e629af24cb52acc78b43e8c9f77d: "1594959296"
+        Hm_lvt_9364e629af24cb52acc78b43e8c9f77d: "1593327126,1593488569,1594959296"
+        wwrtx.c_gdpr: "0"
+        wwrtx.d2st: "a5945218"
+        wwrtx.i18n_lan: "zh-cn"
+        wwrtx.ltype: "1"
+        wwrtx.ref: "direct"
+        wwrtx.refid: "1823376859893635"
+        wwrtx.sid: "3v6ofpNjzebb6RTv5TAadO2H_8juKAj50K_ztj1GQjkGk2f0P3qtjCkyo9lTAp0_"
+        wwrtx.vid: "1688850968926321"
+        wwrtx.vst: "pxoifiYdCenl4FzVSMN1lNUAv3ebWkfTdYCya5QvJeOHXdwxn5G0-CqiVOJadL_NH3u9fbJYEggiXRFmUkkjMdn-RFYmEdLafXDQRbvRhdU1pC89toNyukr2RUU8A9QkqkLJE4OEQgKxm218RRTEynAD_pftKzAGR_z_I4B5zIzJG7yvglPcZWY1yT9waMf_EC29nEEduwjr-5yK41J64FjqG2K9HDYgFF2FDD7rf07r0ZJIwcvwCc3veCiItibdUjzwoW1k6TKET-0WPfAGbA"
+        wxpay.corpid: "1970325099147855"
+        wxpay.vid: "1688850968926321"
+        ww_rtkey: "6lrt42r"
+
+  to_contact:
+    - click: {id: menu_contacts}

@@ -1,0 +1,15 @@
+name: weixin_contact
+methods:
+  add_member:
+    - click: {linktext: 添加成员}
+    - name: username
+      sendKeys: "username" ##入参1
+    - name: acctid
+      sendKeys: "acctid" ##入参2
+    - name: mobile
+      sendKeys: "mobile" ##入参3
+    - click: {css: .js_btn_save}
+
+  search:
+    - id: memberSearchInput
+      sendKeys: "memberSearchInput" ##入参4
