@@ -6,10 +6,6 @@
  */
 package test_service.testcase;
 
-import com.wechat.apiobject.DepartmentApiObject;
-import com.wechat.apiobject.TokenHelper;
-import com.wechat.task.EvnTask;
-import com.wechat.utils.FakerUtils;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
@@ -17,6 +13,10 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import test_service.task.EvnTask;
+import test_service.wechat_apiobject.DepartmentApiObject;
+import test_service.wechat_apiobject.TokenHelper;
+import test_service.wechat_utils.FakerUtils;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -40,7 +40,7 @@ public class Demo_08_01 {
     @BeforeEach
     @AfterEach
     void evnClear() {
-        EvnTask.evnClear(accessToken);
+        EvnTask.clearDepartment(accessToken);
     }
 
     @Description("Description这个测试方法会测试创建部门的功能-入参数据驱动")
@@ -90,6 +90,7 @@ public class Demo_08_01 {
         departmentId = creatResponse.path("id") != null ? creatResponse.path("id").toString() : null;
 
         Response listResponse = DepartmentApiObject.listDepartMent(departmentId, accessToken);
+//        logger.info("查询部门列表返回：" + listResponse.asString());
 
         assertAll("返回值校验!",
                 () -> assertEquals("0" + "x", listResponse.path("errcode").toString()),
@@ -97,7 +98,7 @@ public class Demo_08_01 {
                 () -> assertEquals(creatName + "x", listResponse.path("department.name[0]").toString()),
                 () -> assertEquals(creatNameEn + "x", listResponse.path("department.name_en[0]").toString())
         );
-//
+
 
 
     }

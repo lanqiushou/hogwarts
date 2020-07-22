@@ -1,0 +1,21 @@
+{
+  "userid": "zhangsan",
+  "name": "张三",
+  "alias": null,
+  "mobile": null,
+  "department": [1],
+  "order":[10],
+  "position": null,
+  "gender": "1",
+  "email": null,
+  "is_leader_in_dept": [0],
+  "enable":1,
+  "avatar_mediaid": null,
+  "telephone": null,
+  "address": null,
+  "main_department": 1,
+  "extattr": null,
+  "to_invite": true,
+  "external_position": null,
+  "external_profile": null
+}

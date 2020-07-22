@@ -20,8 +20,8 @@ public class TokenHelper {
     public static String getAccessToken() {
         String accessToken = given()
                 .when()
-                .param("corpid", "ww5ef451bf006ec894")
-                .param("corpsecret", "EcEIog2OJ8AtO7PDaqt_yqHKqmYXqwSZKDhyfU1aSiU")
+                .param("corpid", "ww58614e259032068a")
+                .param("corpsecret", "ctjFc_mxzJOWaJ19l7gXDLkTOcjBsgbkv-NANicb4dI")
                 .get("https://qyapi.weixin.qq.com/cgi-bin/gettoken")
                 .then()
                 .log().body()

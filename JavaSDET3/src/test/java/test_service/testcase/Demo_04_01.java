@@ -6,17 +6,16 @@
  */
 package test_service.testcase;
 
-import com.wechat.apiobject.DepartmentApiObject;
-import com.wechat.apiobject.TokenHelper;
-import com.wechat.task.EvnTask;
-import com.wechat.utils.FakerUtils;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import test_service.task.EvnTask;
+import test_service.wechat_apiobject.DepartmentApiObject;
+import test_service.wechat_apiobject.TokenHelper;
+import test_service.wechat_utils.FakerUtils;
 
-import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -41,7 +40,7 @@ public class Demo_04_01 {
     @BeforeEach
     @AfterEach
     void evnClear() {
-        EvnTask.evnClear(accessToken);
+        EvnTask.clearDepartment(accessToken);
     }
 
     @Test

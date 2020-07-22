@@ -38,7 +38,6 @@ public class WebTest {
         basePage = UIAutoFactory.create("web");
         basePage.loadPages("src/main/resources/test_framework");
         List<Arguments> all= new ArrayList<Arguments>();
-
         Arrays.asList(
 //                "/test_framework/webauto_1.yaml",
 //                "/test_framework/webauto_2.yaml",

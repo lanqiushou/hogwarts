@@ -6,15 +6,18 @@
  */
 package test_service.testcase;
 
-import com.wechat.apiobject.DepartmentApiObject;
-import com.wechat.apiobject.TokenHelper;
-import com.wechat.utils.FakerUtils;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.parallel.Execution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import test_service.wechat_apiobject.DepartmentApiObject;
+import test_service.wechat_apiobject.TokenHelper;
+import test_service.wechat_utils.FakerUtils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
