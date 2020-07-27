@@ -9,7 +9,7 @@ package test_service.testcase;
 import test_service.wechat_apiobject.DepartmentApiObject;
 import test_service.wechat_apiobject.TokenHelper;
 import test_service.task.EvnTask;
-import test_service.wechat_utils.FakerUtils;
+import test_service.utils.FakerUtils;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;

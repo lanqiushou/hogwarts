@@ -1,4 +1,4 @@
-package test_service.wechat_utils;
+package test_service.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

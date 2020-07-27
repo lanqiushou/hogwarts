@@ -9,7 +9,7 @@ package test_service.testcase;
 import io.qameta.allure.Description;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
-import test_service.wechat_utils.FakerUtils;
+import test_service.utils.FakerUtils;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;

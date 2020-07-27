@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import test_service.task.EvnTask;
 import test_service.wechat_apiobject.DepartmentApiObject;
 import test_service.wechat_apiobject.TokenHelper;
-import test_service.wechat_utils.FakerUtils;
+import test_service.utils.FakerUtils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

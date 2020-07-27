@@ -7,7 +7,7 @@
 package test_service.wechat_apiobject;
 
 import io.restassured.response.Response;
-import test_service.wechat_utils.FakerUtils;
+import test_service.utils.FakerUtils;
 
 import static io.restassured.RestAssured.given;
 
