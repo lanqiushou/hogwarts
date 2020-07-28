@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 class BaseApiTest {
     private static BaseApi baseApi;
@@ -23,7 +22,7 @@ class BaseApiTest {
 
     @Test
     void run() {
-        baseApi.run("wework", "get_token");
-        baseApi.run("tags", "list");
+        baseApi.run("wework", "get_token", null);
+        baseApi.run("tags", "list", null);
     }
 }

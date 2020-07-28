@@ -1,14 +1,8 @@
 package test_framework_service;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import test_framework.BasePage;
-import test_framework.UIAuto;
-import test_framework.UIAutoFactory;
 
 import java.io.File;
 import java.io.IOException;
@@ -41,7 +35,7 @@ public class ApiDDTest {
         if(System.getProperty("api")!=null){
             baseApi.load(System.getProperty("api"));
         }else{
-//            baseApi.load("src/main/resources/test_framework_service/api");
+            baseApi.load("src/main/resources/test_framework_service/api");
         }
 
 
@@ -52,6 +46,8 @@ public class ApiDDTest {
         String testcaseDir = "";
         if(System.getProperty("test")!=null){
             testcaseDir=System.getProperty("test");
+        } else {
+            testcaseDir = "src/main/resources/test_framework_service/testcase";
         }
 
         String finalTestcaseDir = testcaseDir;

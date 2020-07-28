@@ -3,9 +3,8 @@ name: wework
 methods:
   #ApiObjectMethodModel
   get_token:
-    method: get
-    url: https://qyapi.weixin.qq.com/cgi-bin/gettoken
+    get: https://qyapi.weixin.qq.com/cgi-bin/gettoken
     query:
-      corpid: ID
-      corpsecret: SECRET
-    save: access_token
+      corpid: ${corpid}
+      corpsecret: ${corpsecret}
+    save: {access_token: access_token} #把Response中access_token节点的值赋给access_token全局变量

@@ -1,7 +1,12 @@
 package test_service.api;
 
+import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 import test_service.utils.Filters;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -17,10 +22,27 @@ public class InterfaceTest {
 //
 //        ObjectMapper
 
-        MyInterface myInterface = (a, b) -> {
-            return a+b;
-        };
+//        MyInterface myInterface = (a, b) -> {
+//            return a+b;
+//        };
 
+
+        String access_token = "7XgG0RIDwRB8kM51bXtt44pUcCcCUnwodeXCdDKR-NpWBuQqjEqgXTZ5UtMqS8kzgQCkGQr98_djFqkirlEGruA4SBY7vRTKZqy7lpv4hvjgK7kXjRZ48EPdNv0Mmoti1YFzPySpABs5LLFfERDfIzuHfTBDOp8GZCoREndjR1CbjpqfNgymxYx10hqJcRDUWdgbgP999Bl3069S_gRMbQ";
+
+        String json = null;
+        try {
+            json = new String(Files.readAllBytes(Paths.get("src/main/resources/wechat/add_tag.json")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        given().when().queryParam("access_token", access_token)
+                .contentType(ContentType.JSON)
+                .body(json)
+                .log().all()
+                .post("https://qyapi.weixin.qq.com/cgi-bin/externalcontact/add_corp_tag")
+                .then()
+                .log().all();
 
     }
 

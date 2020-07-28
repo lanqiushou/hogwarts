@@ -8,7 +8,6 @@ import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.jupiter.api.Assertions.*;
 
 class ApiObjectModelTest {
 
@@ -26,7 +25,7 @@ class ApiObjectModelTest {
 
     @Test
     void run() {
-        Response response = api.methods.get("get_token").run();
+        Response response = api.methods.get("get_token").run(null);
         response.then().statusCode(200);
     }
 }

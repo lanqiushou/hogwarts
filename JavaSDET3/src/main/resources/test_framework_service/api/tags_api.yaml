@@ -4,16 +4,20 @@ methods:
 
   list:
     #ApiObjectMethodModel
-    get: https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list
+    post: https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list
     query:
-      access_token: token
+      access_token: ${access_token}
     json:
-      tag_id: []
+      tag_id: ${tag_id}
 
 
   add:
     #ApiObjectMethodModel
     post: https://qyapi.weixin.qq.com/cgi-bin/externalcontact/add_corp_tag
     query:
-      access_token: token
-
+      access_token: ${access_token}
+    json:
+      group_id: ${group_id}
+      group_name: ${group_name}
+      order: ${order}
+      tag: ${tag}

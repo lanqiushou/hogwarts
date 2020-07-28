@@ -26,12 +26,12 @@ public class ApiObjectModel {
 
     }
 
-    /**
-     * 运行这个api object中的某个封装的方法
-     * @param method
-     */
-    public void run(ApiObjectMethodModel method) {
-        method.run();
-    }
+//    /**
+//     * 运行这个api object中的某个封装的方法
+//     * @param method
+//     */
+//    public void run(ApiObjectMethodModel method) {
+//        method.run(params);
+//    }
 
 }

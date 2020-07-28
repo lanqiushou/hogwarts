@@ -1,6 +1,6 @@
 #ApiTestCaseModel
-name: add
-description: ddd
+name: list
+description: 获取企业标签库
 steps:
   - api: wework
     action: get_token
@@ -9,12 +9,9 @@ steps:
       corpsecret: PkuTCEvpsHED7zQGKDfWPz7PRYwsSafQvgmUZW6365s
 
   - api: tags
-    action: add
+    action: list
     params:
-      group_id:
-      group_name: 标签组测试05
-      order: 3
-      tag: [{name: 标签3, order: 1}, {name: 标签4, order: 2}]
+      tag_id: null
     actual: errcode
     expect: 0
     matcher: eq

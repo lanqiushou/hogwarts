@@ -2,6 +2,7 @@ package test_framework_service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import io.restassured.response.Response;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,6 +21,15 @@ public class ApiTestCaseModel {
     public String name="";
     public String description="";
     public List<HashMap<String, Object>> steps;
+    private static HashMap<String, Object> params = new HashMap<>(); //存放测试步骤中获取的数据，在后续的测试步骤中使用
+
+    public static HashMap<String, Object> getParams() {
+        return params;
+    }
+
+    public static void addParams(String key, Object value) {
+        params.put(key, value);
+    }
 
     /**
      * 加载一个yaml文件，并转成测试用例的模型类
@@ -42,14 +52,19 @@ public class ApiTestCaseModel {
 //            step.entrySet().forEach(entry->{
 //                baseApi.run(entry.getKey(), entry.getValue());
 //            });
-            baseApi.run(step.get("api").toString(), step.get("action").toString());
+            Response response = baseApi.run(step.get("api").toString(), step.get("action").toString(), (HashMap<String, Object>) step.get("params"));
+
             if(step.get("actual")!=null){
                 assertAll(()->{
                     if(step.get("matcher").equals("eq")) {
-                        assertThat(step.get("actual"), equalTo(step.get("expect")));
+                        assertThat(response.path((String)step.get("actual")), equalTo(step.get("expect")));
                     }
+
+                    //todo：其它断言关键字
                 });
             }
         });
     }
+
+
 }

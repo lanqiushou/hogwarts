@@ -1,11 +1,15 @@
 package test_framework_service;
 
+import io.restassured.response.Response;
+
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class BaseApi {
     /**
@@ -39,10 +43,16 @@ public class BaseApi {
      * 根据测试用例中提供的api object和对应的action，从自己的数据中检索对应的api，并调用对应的方法。
      * @param name
      * @param action
+     * @param params
+     * @return
      */
-    public void run(String name, String action){
+    public Response run(String name, String action, HashMap<String, Object> params){
+        AtomicReference<Response> response = new AtomicReference();
+
         apis.stream().filter(api -> api.name.equals(name)).forEach(api->{
-            api.methods.get(action).run();
+            response.set(api.methods.get(action).run(params));
         });
+
+        return response.get();
     }
 }

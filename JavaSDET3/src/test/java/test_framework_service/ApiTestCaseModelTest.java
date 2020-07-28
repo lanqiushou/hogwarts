@@ -7,7 +7,6 @@ import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.jupiter.api.Assertions.*;
 
 class ApiTestCaseModelTest {
 
@@ -18,7 +17,7 @@ class ApiTestCaseModelTest {
     static void beforeAll() throws IOException {
         baseApi = new BaseApi();
         baseApi.load("src/main/resources/test_framework_service/api");
-        apiTestCase = ApiTestCaseModel.load("src/main/resources/test_framework_service/test_add.yaml");
+        apiTestCase = ApiTestCaseModel.load("src/main/resources/test_framework_service/testcase/test_list.yaml");
 
     }
 
